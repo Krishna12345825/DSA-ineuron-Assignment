@@ -1,0 +1,100 @@
+           Assignment Questions 2
+
+Q1. What are the Conditional Operators in Java?
+ans-:There are three types of the conditional operators in Java:
+
+Conditional AND
+Conditional OR
+Ternary Operator
+
+Q2. What are the types of operators based on the number of operands?
+ans:- There are two types of mathematical operators: unary and binary. Unary operators perform an action with a single operand. Binary operators perform actions with two operands.
+
+Q3.What is the use of Switch case in Java programming?
+ans:- The switch case in java is used to select one of many code blocks for execution. Break keyword: As java reaches a break keyword, the control breaks out of the switch block. The execution of code stops on encountering this keyword, and the case testing inside the block ends as the match is found.
+
+Q4.What are the conditional Statements and use of conditional statements in Java?
+ans:- Java has the following conditional statements: Use if to specify a block of code to be executed, if a specified condition is true. Use else to specify a block of code to be executed, if the same condition is false. Use else if to specify a new condition to test, if the first condition is false.
+
+Q5.What is the syntax of if else statement?
+ans:- Use if to specify a block of code to be executed, if a specified condition is true. Use else to specify a block of code to be executed, if the same condition is false. Use else if to specify a new condition to test, if the first condition is false. Use switch to select one of many blocks of code to be executed.
+
+Q6.How do you compare two strings in Java?
+ans:- Using String. equals() :In Java, string equals() method compares the two given strings based on the data/content of the string. If all the contents of both the strings are same then it returns true. If any character does not match, then it returns false.
+
+Q7.What is Mutable String in Java Explain with an example
+ans:- Mutable means changing over time or that can be changed. In a mutable string, we can change the value of the string and JVM doesn’t create a new object. In a mutable string, we can change the value of the string in the same object.
+To create a mutable string in java, Java has two classes StringBuffer and StringBuilder where the String class is used for the immutable string.
+public class MutableString
+{
+    public static void main (String[] args)
+    {
+        StringBuffer str1 = new StringBuffer("JavaGoal");
+        StringBuilder str2 = new StringBuilder("Learning");
+        
+        System.out.println("Value of str1 before change :" + str1);
+        System.out.println("Value of str2 before change :" + str2);
+        
+        str1.append(".com");
+        str2.append(" website");
+        
+        System.out.println("Value of str1 after change :" + str1);
+        System.out.println("Value of str2 after change :" + str2);
+    }
+}
+
+
+Q8.Write a program to sort a String Alphabetically
+ans:- import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args)
+	{
+		String str;
+		Scanner sc = new Scanner(System.in);
+       System.out.println("Enter the string : ");
+		str = sc.nextLine();
+		int j = 0;
+		char temp = 0;
+		char[] chars = str.toCharArray();
+		for (int i = 0; i < chars.length; i++) {
+				for (j = 0; j < chars.length; j++) {
+						if (chars[j] > chars[i]) {
+								temp = chars[i];
+								chars[i] = chars[j];
+								chars[j] = temp;
+						}
+				}
+		}
+	System.out.println("The sorted string is : ");
+	for (int i = 0; i < chars.length; i++) {
+		System.out.print(chars[i]);
+		}
+
+	}
+}
+
+Q9.Write a program to check if the letter 'e' is present in the word 'Umbrella'.
+ans:- class Check_Letter
+{
+	public static void main(String[] args)
+	{
+		String str = "Umbrella";
+		boolean pre = false;
+		for(int i = 0;i<str.length();i++)
+		{
+			if(str.charAt(i) == 'e')
+			{
+				pre=true;
+				break;
+			}
+		}
+		System.out.println(pre);
+	}
+}
+
+Q10.Where exactly is the string constant pool located in the memory?
+ans:- The String constant pool is a special memory area. When we declare a String literal, the JVM creates the object in the pool and stores its reference on the stack. Before creating each String object in memory, the JVM performs some steps to decrease the memory overhead.
+
+
