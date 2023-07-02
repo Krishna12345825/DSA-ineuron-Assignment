@@ -1,0 +1,51 @@
+               Assignment Questions 1
+Q1.What is the difference between Compiler and Interpreter
+ans:-A Compiler takes a program as a whole. An Interpreter takes single lines of a code. The Compilers generate intermediate machine codes. The Interpreters never generate any intermediate machine codes.
+
+
+Q2.What is the difference between JDK, JRE, and JVM?
+ans:- he JRE is an abbreviation for Java Runtime Environment. The JVM is an abbreviation for Java Virtual Machine. The JDK (Java Development Kit) is a software development kit that develops applications in Java. Along with JRE, the JDK also consists of various development tools (Java Debugger, JavaDoc, compilers, etc.)
+
+Q3.How many types of memory areas are allocated by JVM?
+ans:- 
+JVM has five memory locations namely −
+
+Heap − Runtime storage allocation for objects (reference types).
+Stack − Storage for local variables and partial results. A stack contains frames and allocates one for each thread. Once a thread gets completed, this frame also gets destroyed. It also plays roles in method invocation and returns.
+PC Registers − Program Counter Registers contains the address of an instruction that JVM is currently executing.
+Execution Engine − It has a virtual processor, interpreter to interpret bytecode instructions one by one and a JIT, just in time compiler.
+Native method stacks − It contains all the native methods used by the application.
+
+
+Q4.What is JIT compiler?
+ans:-
+The Just-In-Time (JIT) compiler is a component of the runtime environment that improves the performance of Java™ applications by compiling bytecodes to native machine code at run time.
+
+Q5.What are the various access specifiers in Java?
+ans-> In java, there are four types of access specifiers and the name of these access specifiers are given below:
+public access specifiers
+protected access specifiers
+default access specifiers
+private access specifiers
+
+
+Q6.What is a compiler in Java?
+ans:- A Java compiler is a program that takes the text file work of a developer and compiles it into a platform-independent Java file. Java compilers include the Java Programming Language Compiler (javac), the GNU Compiler for Java (GCJ), the Eclipse Compiler for Java (ECJ) and Jikes.
+
+Q7.Explain the types of variables in Java?
+ans:-A variable is assigned with a data type. Variable is a name of memory location. There are three types of variables in java: local, instance and static. There are two types of data types in Java: primitive and non-primitive.
+
+Q8.What are the Datatypes in Java?
+ans:- Primitive data types - includes byte , short , int , long , float , double , boolean and char.
+Non-primitive data types - such as String , Arrays and Classes 
+
+Q9.What are the identifiers in java?
+ans-> Identifiers in Java are a sequence of characters to identify something in a program. They are names given to a class, variable, package, method, or interface and allow the programmer to refer to the specific item from any place in the program.
+
+Q10.Explain the architecture of JVM 
+ans:- A Virtual Machine is a software implementation of a physical machine. Java was developed with the concept of WORA (Write Once Run Anywhere), which runs on a VM. The compiler compiles the Java file into a Java .class file, then that .class file is input into the JVM, which loads and executes the class file. Below is a diagram of the Architecture of the JVM.
+
+
+
+
+
