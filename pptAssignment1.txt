@@ -1,7 +1,11 @@
                Assignment Questions 1
 Q1.What is the difference between Compiler and Interpreter
-ans:-A Compiler takes a program as a whole. An Interpreter takes single lines of a code. The Compilers generate intermediate machine codes. The Interpreters never generate any intermediate machine codes.
+ans:-
+Compiler -> It is a software which takes sourcecode(HLL) as the input and generates MLL code as the ouput
+To convert the HLL code to MLL code compiler will scan the HLL code only once.
 
+Interpreter =>It is a software which takes sourcecode(HLL) as the input and generates MLL code as the ouput
+To convert the HLL code to MLL code interpreter will scan the HLL code mulitple times(depends on the instrcutions).
 
 Q2.What is the difference between JDK, JRE, and JVM?
 ans:- he JRE is an abbreviation for Java Runtime Environment. The JVM is an abbreviation for Java Virtual Machine. The JDK (Java Development Kit) is a software development kit that develops applications in Java. Along with JRE, the JDK also consists of various development tools (Java Debugger, JavaDoc, compilers, etc.)
