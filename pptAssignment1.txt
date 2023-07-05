@@ -8,7 +8,36 @@ Interpreter =>It is a software which takes sourcecode(HLL) as the input and gene
 To convert the HLL code to MLL code interpreter will scan the HLL code mulitple times(depends on the instrcutions).
 
 Q2.What is the difference between JDK, JRE, and JVM?
-ans:- he JRE is an abbreviation for Java Runtime Environment. The JVM is an abbreviation for Java Virtual Machine. The JDK (Java Development Kit) is a software development kit that develops applications in Java. Along with JRE, the JDK also consists of various development tools (Java Debugger, JavaDoc, compilers, etc.)
+ans:- => java program to run we need to set up the environment in our machines
+=> To set up the environment we need to install JDK software to our machines.
+=> JDK stands for Java Development kit, it provides libraries and the requried
+files to run our java programs
+=> JDK :: JRE + JVM
+=> JRE :: Java RunTimeEnvironment, It provides suitable environment to run our java program.
+=> JVM :: Java Virtual Machine, It is responsible to run our java programs on the basis of MultiThreading.
+  Program Execution
+=================
+=> java programs will be first compiled,to compile java program we need java
+compiler and java compiler will be installed when we install
+jdk software.
+
+=> jdk software installation location :: c:\programfiles\jdk....
+=> All the commands required for java developer to run his program would be
+present inside <java_home>\bin folder
+=> bin folder
+|=> javac
+|=> java
+|=> javap
+|=> javadoc
+|=> jar
+=> javaprogram would be first compiled(javac filename.java)
+=> If the compilation is succesfull, it would generate .class file
+=> These .class files will be used by jvm during the execution
+=> .class file generated will have instructions in bytecode(neither HLL nor MLL).
+=> bytecodes will be taken by JVM and it will be loaded inside JRE, then the execution begins.
+Java programs => java compilation + Execution
+(javac) (java-> JIT)
+
 
 Q3.How many types of memory areas are allocated by JVM?
 ans:- 
