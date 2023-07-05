@@ -1,11 +1,9 @@
                Assignment Questions 1
 Q1.What is the difference between Compiler and Interpreter
-ans:-
-Compiler -> It is a software which takes sourcecode(HLL) as the input and generates MLL code as the ouput
-To convert the HLL code to MLL code compiler will scan the HLL code only once.
-
-Interpreter =>It is a software which takes sourcecode(HLL) as the input and generates MLL code as the ouput
-To convert the HLL code to MLL code interpreter will scan the HLL code mulitple times(depends on the instrcutions).
+ans:- Compiler -> It is a software which takes sourcecode(HLL) as the input and generates MLL code as the ouput
+          To convert the HLL code to MLL code compiler will scan the HLL code only once.
+    Interpreter =>It is a software which takes sourcecode(HLL) as the input and generates MLL code as the ouput
+         To convert the HLL code to MLL code interpreter will scan the HLL code mulitple times(depends on the instrcutions).
 
 Q2.What is the difference between JDK, JRE, and JVM?
 ans:- => java program to run we need to set up the environment in our machines
@@ -42,7 +40,6 @@ Java programs => java compilation + Execution
 Q3.How many types of memory areas are allocated by JVM?
 ans:- 
 JVM has five memory locations namely −
-
 Heap − Runtime storage allocation for objects (reference types).
 Stack − Storage for local variables and partial results. A stack contains frames and allocates one for each thread. Once a thread gets completed, this frame also gets destroyed. It also plays roles in method invocation and returns.
 PC Registers − Program Counter Registers contains the address of an instruction that JVM is currently executing.
@@ -63,21 +60,48 @@ private access specifiers
 
 
 Q6.What is a compiler in Java?
-ans:- A Java compiler is a program that takes the text file work of a developer and compiles it into a platform-independent Java file. Java compilers include the Java Programming Language Compiler (javac), the GNU Compiler for Java (GCJ), the Eclipse Compiler for Java (ECJ) and Jikes.
+ans:- It is a software which takes sourcecode(HLL) as the input and generates MLL code as the ouput
+To convert the HLL code to MLL code compiler will scan the HLL code only once.
 
 Q7.Explain the types of variables in Java?
 ans:-A variable is assigned with a data type. Variable is a name of memory location. There are three types of variables in java: local, instance and static. There are two types of data types in Java: primitive and non-primitive.
 
 Q8.What are the Datatypes in Java?
-ans:- Primitive data types - includes byte , short , int , long , float , double , boolean and char.
-Non-primitive data types - such as String , Arrays and Classes 
+ans:- 1. Number
+          a. Integral type byte,short,int,long
+          b. Floating type float,double
+      2. Character
+          a. char
+      3. Boolean type
+          a. boolean
+      4. Images,audio,video
+          a. LOB's(Large Object)
+
 
 Q9.What are the identifiers in java?
-ans-> Identifiers in Java are a sequence of characters to identify something in a program. They are names given to a class, variable, package, method, or interface and allow the programmer to refer to the specific item from any place in the program.
+ans-> identifer is a name in java program.
+identifer can be classname,methodname,variablename,labelname.
+eg::
+class Demo
+{
+public static void main(String[] args)
+{
+int x = 10;
+}
+}
+Demo: classname
+main: methodName
+String: className
+args : variablename
+x : variableName
+
 
 Q10.Explain the architecture of JVM 
-ans:- A Virtual Machine is a software implementation of a physical machine. Java was developed with the concept of WORA (Write Once Run Anywhere), which runs on a VM. The compiler compiles the Java file into a Java .class file, then that .class file is input into the JVM, which loads and executes the class file. Below is a diagram of the Architecture of the JVM.
-
+ans:-   JVM preference while loading the .class file
+        1. Search in the current working directory from where the program would start.
+        2. Search in the rt.jar(inbuilt jar with all the .class files) file also with the specified packages
+        3. search in the ext folder of jre environment.
+        4. search in the classpath supplied jar file
 
 
 
