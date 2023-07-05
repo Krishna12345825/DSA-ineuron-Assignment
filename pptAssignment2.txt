@@ -2,10 +2,15 @@
 
 Q1. What are the Conditional Operators in Java?
 ans-:There are three types of the conditional operators in Java:
-
-Conditional AND
-Conditional OR
-Ternary Operator
+ Conditional AND
+ Conditional OR
+ ?:(Ternary operator)
+  eg::
+   int x = (10>20) ? 30 : 40;
+   System.out.println(x);//40
+eg::
+  int x = (10>20) ? 30 : (100>20) ? 40 : 50;
+  System.out.println(x);//40 
 
 Q2. What are the types of operators based on the number of operands?
 ans:- There are two types of mathematical operators: unary and binary. Unary operators perform an action with a single operand. Binary operators perform actions with two operands.
@@ -17,7 +22,12 @@ Q4.What are the conditional Statements and use of conditional statements in Java
 ans:- Java has the following conditional statements: Use if to specify a block of code to be executed, if a specified condition is true. Use else to specify a block of code to be executed, if the same condition is false. Use else if to specify a new condition to test, if the first condition is false.
 
 Q5.What is the syntax of if else statement?
-ans:- Use if to specify a block of code to be executed, if a specified condition is true. Use else to specify a block of code to be executed, if the same condition is false. Use else if to specify a new condition to test, if the first condition is false. Use switch to select one of many blocks of code to be executed.
+ans:- The Java if-else statement also tests the condition. It executes the if block if condition is true otherwise else block is executed.
+if(condition){  
+//code if condition is true  
+}else{  
+//code if condition is false  
+}  
 
 Q6.How do you compare two strings in Java?
 ans:- Using String. equals() :In Java, string equals() method compares the two given strings based on the data/content of the string. If all the contents of both the strings are same then it returns true. If any character does not match, then it returns false.
